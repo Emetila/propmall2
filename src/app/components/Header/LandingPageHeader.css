@@ -1,0 +1,107 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 var(--app-block-padding);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 10vw;
+}
+
+.logo {
+    width: 20vw;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Montserrat";
+    color: #469373;
+}
+
+.menu ul li a:active {
+    color: #45A67E;
+    text-decoration: underline;
+}
+
+.menu ul li a:hover {
+    color: #45A67E;
+    font-size: 20px;
+}
+
+.button {
+    display: flex;
+    gap: 20px;
+}
+
+.dropdown {
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+    gap: 10px;
+  }
+
+.dropdown-icon {
+    fill: #469373;
+    width: 18px;
+    height: 18px;
+}
+  .dropdown .dropbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #469373;
+    padding: 14px 16px;
+    background-color: transparent;
+    font-family: "Monteserrat";
+    font-weight: 600;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    max-width: 228px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    height: 68px;
+  }
+
+  .dropdown-content a h3 {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Open sans", sans-serif;
+  }
+
+  .dropdown-content a p {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    color: #585959;
+  }
+  .dropdown-content a:hover {
+    border-left: 3px solid #45A67E;
+    background-color: azure;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
