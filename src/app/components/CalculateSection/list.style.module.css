@@ -1,0 +1,24 @@
+.items {
+    display: flex;
+    width: 459px;
+    height: 309px;
+}
+
+.item1, .item2 {
+    background-color: #E8E7EE;
+    width: max-content;
+    height: 23vw;
+    padding: 25px 36px 0 36px;
+}
+
+.item2 {
+    background-color: #EEF8F4;
+    box-shadow: 0 4px 8px 0 #8E98A880, 0 6px 20px 0 #8E98A880;
+}
+
+.items ul li, .item2 li {
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+    line-height: 4vw;
+    font-size: 18px;
+}

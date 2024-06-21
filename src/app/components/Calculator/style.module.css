@@ -1,0 +1,52 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text, .amount {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #1C0B54;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.amount {
+    background-color: #E6F4EE;
+    color: #04010a7c;
+    width: 280px;
+    border-radius: 16px;
+    padding: 10px;
+    text-align: center;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    background-color: #E6F4EE;
+    height: 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.increase {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #04010a6e;
+    font-weight: 400
+}
+
+.count {
+    font-size: 18px;
+    color: #04010a6e;
+    font-weight: 400;
+}
+
+.calcbtn {
+    width: 250px;
+    height: 46px;
+}
