@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --app-block-padding: 4rem;
+}
+
+@media (max-width: 769px) {
+  :root {
+    --app-block-padding: 30px;
+  }
+}
