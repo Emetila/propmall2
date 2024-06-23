@@ -107,6 +107,10 @@
     display: block;
   }
 
+
+  .menu-icon {
+    display: hidd;
+  }
   @media (max-width:500px) {
     .menu-icon, .button {
         display: block;
