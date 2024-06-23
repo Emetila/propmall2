@@ -106,3 +106,56 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  @media (max-width:500px) {
+    .menu-icon, .button {
+        display: block;
+        fill: #673BB7;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 280px;
+        padding-bottom: 30px;
+    }
+
+    .menu, .button {
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        right: 0px;
+        padding-left: 20px;
+        top: 80px;
+        background-color: white;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .menu ul {
+        display: none;
+        padding: 0;
+    }
+
+    .menu ul.mobile {
+        display: block;
+    }
+    
+    .menu ul li {
+    padding: 10px 0;
+}
+
+.menu li.hidden-mobile, .button {
+    display: none;
+}
+.button .buttonsignup, .button .login {
+    width: 350px;
+    height: 50px;
+}
+}

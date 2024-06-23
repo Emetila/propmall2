@@ -22,3 +22,29 @@
     line-height: 4vw;
     font-size: 18px;
 }
+
+@media (max-width:500px) {
+    .items {
+        display: flex;
+        width: 300px;
+        align-items: center;
+        height: max-content;
+    }
+
+    .item1, .item2 {
+        background-color: #E8E7EE;
+        width: max-content;
+        height: 60vw;
+        padding: 20px 20px 0 20px;
+    }
+
+    .item2 {
+        background-color: #EEF8F4;
+        box-shadow: 0 4px 8px 0 #8E98A880, 0 6px 20px 0 #8E98A880;
+    }
+    
+    .items ul li, .item2 li {
+        line-height: 8vw;
+        font-size: 14px;
+    }
+}

@@ -25,7 +25,7 @@ export const LandingPageHeader = () => {
         <div>
             <Logo className='logo' />
         </div>
-        {/* <Menuicon className='menu-icon' onClick={toggleMenu} fill='white' /> */}
+        {/* <Menuicon className='menu-icon' onClick={toggleMenu} fill='#57B890' /> */}
         <div className='menu'>
             <HeaderNavigation />
         </div>

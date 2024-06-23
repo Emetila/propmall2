@@ -32,3 +32,25 @@ section {
     width: 297px;
     height: 297px;
 }
+
+@media (max-width:500px) {
+   section {
+    padding: var(--app-block-padding);
+   } 
+
+   .title {
+    font-size: 24px;
+    line-height: 37px;
+}
+
+.subtitle {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.calculate {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+}
