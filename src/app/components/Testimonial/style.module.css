@@ -98,3 +98,43 @@ section {
   .controls button:hover {
     background: #ccc;
   }
+
+  @media (max-width:500px) {
+    .reviews {
+        transition: transform 0.1s ease-in-out;
+    } 
+
+    .reviewbox {
+        width: 300px;
+        height: 90px;
+    }
+
+    .name {
+        font-size: 18px;
+        padding-top: 10px;
+    }
+
+    .reviewimg {
+        width: 50px;
+        height: 50px;
+     }
+
+     .reviewbody {
+        background-color: #E8E7EE;
+        width: 260px;
+        margin-top: -10px;
+    }
+    
+    .quote {
+        margin-right: 80vw;
+    }
+    
+    .quoteright {
+        margin-left: 80vw;
+    }
+
+    .controls {
+        gap: 10px;
+        margin-top: 10px;
+      }
+  }
