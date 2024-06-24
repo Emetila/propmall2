@@ -80,16 +80,14 @@ input:active {
     padding: 10px;
 }
 
-.forgot,
-.signedin {
+.forgot, .signedin {
     display: flex;
     color: #469373;
     align-items: center;
     gap: 10px;
 }
 
-.forgottext,
-.keepme {
+.forgottext, .keepme {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -97,8 +95,16 @@ input:active {
     text-align: left;
 }
 
-.keyicon,
-.circleicon {
+.forgottext a {
+    text-decoration: none;
+    color: #469373;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+.keyicon, .circleicon {
     width: 24px;
     height: 24px;
 }
@@ -107,21 +113,18 @@ input:active {
     padding-bottom: 30px;
 }
 
-.buttonsignup,
-.googlesignin {
+.buttonsignup, .googlesignin {
     width: 320px;
 }
 
-.googlesignin,
-.new {
+.googlesignin, .new {
     gap: 20px;
     border: none;
     color: #1C0B54;
     font-weight: 400;
 }
 
-.google,
-.apple {
+.google, .apple {
     width: 28px;
     height: 26px;
     box-shadow: rgb(189, 187, 187) 0px 5px 15px;

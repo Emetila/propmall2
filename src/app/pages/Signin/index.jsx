@@ -91,7 +91,7 @@ export const Login = ({ label, ...props }) => {
                         {error && <div className="error">{error}</div>}
                         <div className={style.forgot}>
                             <IoKeyOutline className={style.keyicon} />
-                            <p className={style.forgottext}>Forgot Password?</p>
+                            <p className={style.forgottext}><a href="/forgotpassword">Forgot password?</a></p>
                         </div>
                         <div className={style.signedin}>
                             <FaRegCircle className={style.circleicon} />
@@ -115,7 +115,7 @@ export const Login = ({ label, ...props }) => {
                 <div className={style.righttext}>
                     <h2>You are back!</h2>
                     <p>Excited to see how well your investment is doing?</p>
-                    <a href="/signin">SignIn</a>
+                    <a href="/login">SignIn</a>
                 </div>
             </div>
         </div>
