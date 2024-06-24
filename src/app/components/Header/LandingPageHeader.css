@@ -10,6 +10,7 @@
 
 .logo {
     width: 20vw;
+    cursor: pointer;
 }
 
 .menu ul {
@@ -34,7 +35,15 @@
 
 .menu ul li a:hover {
     color: #45A67E;
-    font-size: 20px;
+}
+
+.login a {
+  color: #45A67E;
+  text-decoration: none;
+}
+
+.login a:hover {
+  color: white;
 }
 
 .button {

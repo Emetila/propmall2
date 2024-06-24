@@ -23,14 +23,14 @@ export const LandingPageHeader = () => {
 
     return (<header className='header'>
         <div>
-            <Logo className='logo' />
+            <Logo href="/home" className='logo' />
         </div>
         {/* <Menuicon className='menu-icon' onClick={toggleMenu} fill='#57B890' /> */}
         <div className='menu'>
             <HeaderNavigation />
         </div>
         <div className="button">
-            <CustomButton className="login" onClick={()=>{}} type="secondary">Login</CustomButton>
+            <CustomButton className="login" onClick={()=>{}} type="secondary"><a href="/">Login</a></CustomButton>
             <CustomButton className="buttonsignup" onClick={()=>{}}>Sign Up</CustomButton>
         </div>
     </header>)
