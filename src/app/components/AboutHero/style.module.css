@@ -1,0 +1,22 @@
+.container {
+    padding: var(--app-block-padding);
+}
+
+.containerbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image {
+    width: 400px;
+    height: 400px;
+    border-radius: 20.48px;
+}
+
+.text {
+    width: 500px;
+    color: #1C0B54;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}

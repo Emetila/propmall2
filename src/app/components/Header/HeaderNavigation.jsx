@@ -5,9 +5,9 @@ import { NavLink, Link } from "react-router-dom";
 export const HeaderNavigation = (props) => {
     const [activeNav, setActiveNav] = useState('/');
 
-  const handleNavClick = (path) => {
-    setActiveNav(path);
-  };
+    const handleNavClick = (path) => {
+        setActiveNav(path);
+    };
     const [activeMenu, setActiveMenu] = useState(null);
     const [dropdownVisible, setDropdownVisible] = useState(false);
 
@@ -55,7 +55,7 @@ export const HeaderNavigation = (props) => {
                     </div>
                 )} */}
                 <div class="dropdown">
-                <NavLink to="/asset"  onClick={() => handleNavClick('/asset')} className={activeNav === '/asset' ? 'nav-item active' : 'nav-item'}>Asset
+                    <NavLink to="/asset" onClick={() => handleNavClick('/asset')} className={activeNav === '/asset' ? 'nav-item active' : 'nav-item'}>Asset
                         <FaAngleDown className="dropdown-icon" onClick={toggleDropdown} /></NavLink>
                     <div className={`dropdown-content ${dropdownOpen ? 'show' : ''}`}>
                         <Link to="/featured" ><h3>Featured properties</h3>
@@ -63,17 +63,17 @@ export const HeaderNavigation = (props) => {
                         <a href="/option2"><h3>Investments</h3>
                             <p>Explore investment options</p></a>
                     </div>
-                <div class="dropdown-content">
+                    <div class="dropdown-content">
                         <a href="#"><h3>Featured properties</h3>
-                        <p>Find your next property buy</p></a>
+                            <p>Find your next property buy</p></a>
                         <a href="#"><h3>Investments</h3>
-                        <p>Explore investment options</p></a>
-                        </div>
+                            <p>Explore investment options</p></a>
+                    </div>
                 </div>
             </li>
             <li>
-                <Link to="/ourstory" className={activeNav === '/ourstory' ? 'nav-item active' : 'nav-item'} 
-        onClick={() => handleNavClick('/services')}>Our Story</Link>
+                <Link to="/ourstory" className={activeNav === '/ourstory' ? 'nav-item active' : 'nav-item'}
+                    onClick={() => handleNavClick('/ourstory')}>Our Story</Link>
             </li>
             <li>
                 <div class="dropdown">
