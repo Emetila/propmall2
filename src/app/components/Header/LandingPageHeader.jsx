@@ -1,9 +1,9 @@
 import './LandingPageHeader.css'
 import React from 'react';
-// import {ReactComponent as Menuicon} from '../../assets/icons/menu.svg';
+import { Link } from 'react-router-dom';
 import { HeaderNavigation } from './HeaderNavigation';
 import { CustomButton } from '../Button';
-import {ReactComponent as Logo} from '../../assets/logo.svg'
+import { LogoImage } from './Logo';
 // import { ReactComponent as Menuicon } from '../../assets/Icons/menu.svg'
 
 // function useState(initialValue) {
@@ -23,7 +23,7 @@ export const LandingPageHeader = () => {
 
     return (<header className='header'>
         <div>
-            <Logo href="/home" className='logo' />
+            <LogoImage />
         </div>
         {/* <Menuicon className='menu-icon' onClick={toggleMenu} fill='#57B890' /> */}
         <div className='menu'>

@@ -22,7 +22,7 @@
 
 .menu ul li a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     font-family: "Montserrat";
     color: #469373;
@@ -40,6 +40,10 @@
 .login a {
   color: #45A67E;
   text-decoration: none;
+}
+
+.nav-item.active {
+  color: #1C0B54;
 }
 
 .login a:hover {

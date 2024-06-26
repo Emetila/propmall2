@@ -1,9 +1,24 @@
 import React, { useState } from "react";
 import { FaAngleDown } from "react-icons/fa6";
-
-<script src="dropdown.js"></script>
+import { NavLink, Link } from "react-router-dom";
 
 export const HeaderNavigation = (props) => {
+    const [activeNav, setActiveNav] = useState('/');
+
+  const handleNavClick = (path) => {
+    setActiveNav(path);
+  };
+    const [activeMenu, setActiveMenu] = useState(null);
+    const [dropdownVisible, setDropdownVisible] = useState(false);
+
+    const handleMenuClick = (menu) => {
+        setActiveMenu(menu);
+        setDropdownVisible(false);
+    };
+
+    const handleDropdownClick = () => {
+        setDropdownVisible(!dropdownVisible);
+    };
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -18,25 +33,47 @@ export const HeaderNavigation = (props) => {
         <div className={`navbar-links ${mobileMenuOpen ? 'open' : ''}`}></div>
         <ul className={props.className}>
             <li>
+                {/* Asset
+                <FaAngleDown className={`menu-item ${activeMenu === 'services' ? 'active' : ''}`}
+                    onClick={handleDropdownClick} />
+                {dropdownVisible && (
+                    <div className="dropdown">
+                        <div
+                            className="dropdown-item"
+                            onClick={() => handleMenuClick('service1')}
+                        >
+                            <h3>Featured properties</h3>
+                            <p>Find your next property buy</p>
+                        </div>
+                        <div
+                            className="dropdown-item"
+                            onClick={() => handleMenuClick('service2')}
+                        >
+                            <h3>Investments</h3>
+                            <p>Explore investment options</p>
+                        </div>
+                    </div>
+                )} */}
                 <div class="dropdown">
-                    <div className="dropbtn">Asset
-                        <FaAngleDown className="dropdown-icon" onClick={toggleDropdown} /></div>
+                <NavLink to="/asset"  onClick={() => handleNavClick('/asset')} className={activeNav === '/asset' ? 'nav-item active' : 'nav-item'}>Asset
+                        <FaAngleDown className="dropdown-icon" onClick={toggleDropdown} /></NavLink>
                     <div className={`dropdown-content ${dropdownOpen ? 'show' : ''}`}>
-                        <a href="/featured"><h3>Featured properties</h3>
-                            <p>Find your next property buy</p></a>
+                        <Link to="/featured" ><h3>Featured properties</h3>
+                            <p>Find your next property buy</p></Link>
                         <a href="/option2"><h3>Investments</h3>
                             <p>Explore investment options</p></a>
                     </div>
-                    {/* <div class="dropdown-content">
+                <div class="dropdown-content">
                         <a href="#"><h3>Featured properties</h3>
                         <p>Find your next property buy</p></a>
                         <a href="#"><h3>Investments</h3>
                         <p>Explore investment options</p></a>
-                        </div> */}
+                        </div>
                 </div>
             </li>
             <li>
-                <a href="/ourstory">Our Story</a>
+                <Link to="/ourstory" className={activeNav === '/ourstory' ? 'nav-item active' : 'nav-item'} 
+        onClick={() => handleNavClick('/services')}>Our Story</Link>
             </li>
             <li>
                 <div class="dropdown">
