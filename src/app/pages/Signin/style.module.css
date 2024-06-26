@@ -179,3 +179,8 @@ input:active {
     line-height: 28px;
     padding-top: 10px;
 }
+
+.buttonsignup a {
+    color: white;
+    text-decoration: none;
+}

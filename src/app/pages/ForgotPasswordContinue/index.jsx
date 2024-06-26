@@ -4,7 +4,7 @@ import { ReactComponent as Image } from '../../assets/images/forgotimg.svg';
 import { CustomButton } from '../../components/Button';
 
 export const ForgotPasswordContinue = () => {
-    const [email, setEmail] = useState('');
+    const [email] = useState('');
     const [message, setMessage] = useState('');
     const [error, setError] = useState('');
 
