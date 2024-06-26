@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { FaAngleDown } from "react-icons/fa6";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 
 export const HeaderNavigation = (props) => {
+    const location = useLocation();
+
+  
     const [activeNav, setActiveNav] = useState('/');
 
     const handleNavClick = (path) => {
@@ -72,8 +75,9 @@ export const HeaderNavigation = (props) => {
                 </div>
             </li>
             <li>
-                <Link to="/ourstory" className={activeNav === '/ourstory' ? 'nav-item active' : 'nav-item'}
-                    onClick={() => handleNavClick('/ourstory')}>Our Story</Link>
+                <Link to="/ourstory" 
+                className={`menu-item ${activeMenu === '/ourstory' ? 'active' : ''}`}
+                onClick={() => handleMenuClick('/ourstory')}>Our Story</Link>
             </li>
             <li>
                 <div class="dropdown">

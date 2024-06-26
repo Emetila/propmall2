@@ -42,7 +42,7 @@
   text-decoration: none;
 }
 
-.nav-item.active {
+.nav-item.active, .menu-item.active {
   color: #1C0B54;
 }
 

@@ -1,0 +1,9 @@
+.container {
+    padding: var(--app-block-padding);
+    background-color: #1C0B54;
+    margin: 0 40px;
+}
+
+.container h1 {
+    color: #CBE9DD;
+}
