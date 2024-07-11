@@ -88,8 +88,8 @@ export const HeaderNavigation = (props) => {
                             <p>Discover insights and trends</p></a>
                         <a href="#"><h3>Community</h3>
                             <p>Join our real estate network</p></a>
-                        <a href="#"><h3>FAQs</h3>
-                            <p>Get answer to your questions</p></a>
+                        <Link to="/faq"><h3>FAQs</h3>
+                            <p>Get answer to your questions</p></Link>
                     </div>
                 </div>
             </li>

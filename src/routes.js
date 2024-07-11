@@ -5,6 +5,7 @@ import { ForgotPasswordPage } from './app/pages/Forgot password';
 import { ForgotPasswordContinue } from './app/pages/ForgotPasswordContinue';
 import { AssetPage } from './app/pages/AssetPage';
 import { AboutPage } from './app/pages/About';
+import { FaqPage } from './app/pages/FAQ';
 
 export const RoutesPage = () => {
     return (
@@ -18,6 +19,7 @@ export const RoutesPage = () => {
                     <Route path="/forgotpasswordcontinue" element={<ForgotPasswordContinue />} />
                     <Route path="/asset" element={<AssetPage />} />
                     <Route path="/ourstory" element={<AboutPage />} />
+                    <Route path="/faq" element={<FaqPage />} />
                 </Routes>
             </BrowserRouter>
         </div>
