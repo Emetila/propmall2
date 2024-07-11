@@ -5,8 +5,8 @@ import style from './style.module.css'
 
 export const FAQHero = () => {
     return (
-        <section>
-            <div>
+        <section className={style.container}>
+            <div className={style.imagebox}>
             <Image1 className={style.image1} />
             <h1>FAQS</h1>
             <Image2 className={style.image2} />

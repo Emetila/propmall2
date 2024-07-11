@@ -21,7 +21,7 @@ export const LandingPageHeader = () => {
     //     setMenu(showMenu === false)
     // }
 
-    return (<header className='header'>
+    return (<header className='headercontainer'>
         <div>
             <LogoImage />
         </div>

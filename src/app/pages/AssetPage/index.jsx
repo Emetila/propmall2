@@ -1,11 +1,11 @@
-import { Asset } from "../../components/Asset"
+import { PropertyHero } from "../../components/PropertyHero"
 import { LandingPageHeader } from "../../components/Header/LandingPageHeader"
 
 export const AssetPage = () => {
     return (
         <div>
             <LandingPageHeader />
-            <Asset />
+            <PropertyHero />
         </div>
     )
 }

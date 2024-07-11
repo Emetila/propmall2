@@ -12,19 +12,6 @@ section {
     line-height: 38.4px;
 }
 
-@keyframes title {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-.title {
-    animation: fadeIn 2s ease-in;
-}
-
 .subtitle {
     text-align: center;
     color: #160943;

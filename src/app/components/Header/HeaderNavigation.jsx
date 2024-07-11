@@ -58,7 +58,7 @@ export const HeaderNavigation = (props) => {
                     </div>
                 )} */}
                 <div class="dropdown">
-                    <NavLink to="/asset" onClick={() => handleNavClick('/asset')} className={activeNav === '/asset' ? 'nav-item active' : 'nav-item'}>Asset
+                    <NavLink to="/property" onClick={() => handleNavClick('/property')} className={activeNav === '/property' ? 'nav-item active' : 'nav-item'}>Asset
                         <FaAngleDown className="dropdown-icon" onClick={toggleDropdown} /></NavLink>
                     <div className={`dropdown-content ${dropdownOpen ? 'show' : ''}`}>
                         <Link to="/featured" ><h3>Featured properties</h3>
@@ -67,17 +67,16 @@ export const HeaderNavigation = (props) => {
                             <p>Explore investment options</p></a>
                     </div>
                     <div class="dropdown-content">
-                        <a href="#"><h3>Featured properties</h3>
-                            <p>Find your next property buy</p></a>
+                        <Link to="/property"><h3>Featured properties</h3>
+                            <p>Find your next property buy</p></Link>
                         <a href="#"><h3>Investments</h3>
                             <p>Explore investment options</p></a>
                     </div>
                 </div>
             </li>
             <li>
-                <Link to="/ourstory" 
-                className={`menu-item ${activeMenu === '/ourstory' ? 'active' : ''}`}
-                onClick={() => handleMenuClick('/ourstory')}>Our Story</Link>
+                <NavLink to="/ourstory" 
+                onClick={() => handleNavClick('/ourstory')} className={activeNav === '/ourstory' ? 'nav-item active' : 'nav-item'}>Our Story</NavLink>
             </li>
             <li>
                 <div class="dropdown">
