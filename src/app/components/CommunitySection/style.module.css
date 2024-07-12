@@ -48,7 +48,7 @@
     .container {
         padding: var(--app-block-padding);
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
         width: 400px;
     }
@@ -58,19 +58,13 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 300px;
+       
     }
 
     .text {
-        width: 250px;
         text-align: center;
         padding: 0 60px;
         padding-bottom: 50px;
-    }
-
-    .joinbtn {
-        width: 250px;
-        padding-right: 40px;
     }
     
     .image {

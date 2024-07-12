@@ -22,7 +22,7 @@
   .searchbar {
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
+    border: 1px solid #1E4032;
     border-radius: 16px;
     padding: 5px;
     margin-right: 10px;
@@ -41,7 +41,6 @@
     border: none;
     width: 400px;
     font-size: 16px;
-    color: #418A6C;
   }
 
 .proprty-hero {

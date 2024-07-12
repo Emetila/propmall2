@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 var(--app-block-padding);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 10vw;
     gap: 20px;
 }
@@ -121,24 +120,26 @@
   }
 
 
-  .menu-icon {
-    display: hidd;
+  .menu-icon, .mobilebutton {
+    display: none;
   }
+
   @media (max-width:500px) {
-    .menu-icon, .button {
+    .menu-icon {
         display: block;
-        fill: #673BB7;
+        fill: #45A67E;
+        width: 32px;
+        height: 60px;
     }
 
-    .button {
+    .mobilebutton {
         display: flex;
-        flex-direction: column;
         gap: 20px;
-        margin-top: 280px;
-        padding-bottom: 30px;
+        /* margin-top: 280px; */
+        /* padding-bottom: 30px; */
     }
 
-    .menu, .button {
+    .menu {
         flex-direction: column;
         position: absolute;
         left: 0;
@@ -171,8 +172,24 @@
 .menu li.hidden-mobile, .button {
     display: none;
 }
-.button .buttonsignup, .button .login {
-    width: 350px;
-    height: 50px;
+.mobilebutton  {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 50px;
+}
+
+.mobilebutton .loginbutton {
+  background-color: transparent;
+  border: 1px solid #45A67E;
+  padding: 15px;
+  border-radius: 28px;
+}
+
+.mobilebutton .signupbutton {
+  background-color: #45A67E;
+  color: white;
+  padding: 15px;
+  border-radius: 28px;
 }
 }

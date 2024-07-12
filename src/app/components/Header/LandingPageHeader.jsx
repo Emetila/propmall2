@@ -1,10 +1,9 @@
 import './LandingPageHeader.css'
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { HeaderNavigation } from './HeaderNavigation';
 import { CustomButton } from '../Button';
 import { LogoImage } from './Logo';
-// import { ReactComponent as Menuicon } from '../../assets/Icons/menu.svg'
+import { IoMdMenu } from "react-icons/io";
 
 // function useState(initialValue) {
 //     let val = initialValue
@@ -15,22 +14,22 @@ import { LogoImage } from './Logo';
 //     return [val, change]
 // }
 export const LandingPageHeader = () => {
-    // const [showMenu, setMenu] = React.useState(false);
+    const [showMenu, setMenu] = React.useState(false);
 
-    // const toggleMenu = () => {
-    //     setMenu(showMenu === false)
-    // }
+    const toggleMenu = () => {
+        setMenu(showMenu === false)
+    }
 
     return (<header className='headercontainer'>
         <div>
             <LogoImage />
         </div>
-        {/* <Menuicon className='menu-icon' onClick={toggleMenu} fill='#57B890' /> */}
+        <IoMdMenu className='menu-icon' onClick={toggleMenu} />
         <div className='menu'>
-            <HeaderNavigation />
+            <HeaderNavigation className={showMenu ? 'mobile' : ''}/>
         </div>
         <div className="button">
-            <CustomButton className="login" onClick={()=>{}} type="secondary"><a href="/">Login</a></CustomButton>
+            <CustomButton  className="login" onClick={()=>{}} type="secondary"><a href="/">Login</a></CustomButton>
             <CustomButton className="buttonsignup" onClick={()=>{}}>Sign Up</CustomButton>
         </div>
     </header>)

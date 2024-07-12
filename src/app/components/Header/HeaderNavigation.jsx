@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaAngleDown } from "react-icons/fa6";
 import { NavLink, Link, useLocation } from "react-router-dom";
+import { CustomButton } from "../Button";
 
 export const HeaderNavigation = (props) => {
     const location = useLocation();
@@ -36,27 +37,6 @@ export const HeaderNavigation = (props) => {
         <div className={`navbar-links ${mobileMenuOpen ? 'open' : ''}`}></div>
         <ul className={props.className}>
             <li>
-                {/* Asset
-                <FaAngleDown className={`menu-item ${activeMenu === 'services' ? 'active' : ''}`}
-                    onClick={handleDropdownClick} />
-                {dropdownVisible && (
-                    <div className="dropdown">
-                        <div
-                            className="dropdown-item"
-                            onClick={() => handleMenuClick('service1')}
-                        >
-                            <h3>Featured properties</h3>
-                            <p>Find your next property buy</p>
-                        </div>
-                        <div
-                            className="dropdown-item"
-                            onClick={() => handleMenuClick('service2')}
-                        >
-                            <h3>Investments</h3>
-                            <p>Explore investment options</p>
-                        </div>
-                    </div>
-                )} */}
                 <div class="dropdown">
                     <NavLink to="/property" onClick={() => handleNavClick('/property')} className={activeNav === '/property' ? 'nav-item active' : 'nav-item'}>Asset
                         <FaAngleDown className="dropdown-icon" onClick={toggleDropdown} /></NavLink>
@@ -67,7 +47,8 @@ export const HeaderNavigation = (props) => {
                             <p>Explore investment options</p></a>
                     </div>
                     <div class="dropdown-content">
-                        <Link to="/property"><h3>Featured properties</h3>
+                        <Link to="/property" onClick={() => handleNavClick('/ourstory')} className={activeNav === '/ourstory' ? 'nav-item active' : 'nav-item'}>
+                        <h3>Featured properties</h3>
                             <p>Find your next property buy</p></Link>
                         <a href="#"><h3>Investments</h3>
                             <p>Explore investment options</p></a>
@@ -103,6 +84,11 @@ export const HeaderNavigation = (props) => {
                             <p>Reach us for more inquiries</p></a>
                     </div>
                 </div>
+            </li>
+
+            <li className="mobilebutton">
+                <Link className="loginbutton" to="/login">Login</Link>
+                <Link className="signupbutton" to="/signup">Sign Up</Link>
             </li>
         </ul>
     </nav>
