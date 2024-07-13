@@ -6,13 +6,14 @@ import { ForgotPasswordContinue } from './app/pages/ForgotPasswordContinue';
 import { AboutPage } from './app/pages/About';
 import { FaqPage } from './app/pages/FAQ';
 import { PropertyPage } from './app/pages/PropertyPage';
+import { UserDashoardPage } from './app/pages/UserDashboard';
 
 export const RoutesPage = () => {
     return (
         <div>
             <BrowserRouter>
                 <Routes>
-                    <Route index element= {<Login />} />
+                    <Route index element= {<HomePage />} />
                     <Route path="/home" element={<HomePage />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/forgotpassword" element={<ForgotPasswordPage />} />
@@ -20,6 +21,8 @@ export const RoutesPage = () => {
                     <Route path="/property" element={<PropertyPage />} />
                     <Route path="/ourstory" element={<AboutPage />} />
                     <Route path="/faq" element={<FaqPage />} />
+                    <Route path="/userdashboard" element={<UserDashoardPage />} />
+                    <Route path="/dashboard" element={<UserDashoardPage />} />
                 </Routes>
             </BrowserRouter>
         </div>

@@ -51,7 +51,7 @@ export const Login = ({ label, ...props }) => {
     };
 
     if (isLoggedIn) {
-        navigate('/home');
+        navigate('/');
     }
 
     return (
@@ -97,7 +97,7 @@ export const Login = ({ label, ...props }) => {
                             <FaRegCircle className={style.circleicon} />
                             <p className={style.keepme}>Keep me signed in</p>
                         </div>
-                        <CustomButton className={style.buttonsignup} onClick={() => { }}><a href="/home">Sign In</a></CustomButton>
+                        <CustomButton className={style.buttonsignup} onClick={() => { }}><a href="/userdashboard">Sign In</a></CustomButton>
                     </form>
                 </div>
 

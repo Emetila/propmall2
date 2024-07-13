@@ -1,0 +1,8 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.body {
+    background-color: #EEF8F4;
+}

@@ -1,0 +1,179 @@
+.container {
+    background-color: #EEF8F4;
+    padding: 0 60px;
+    padding-bottom: 70px;
+}
+
+.header {
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 543px;
+}
+
+.walletbox {
+    display: inline-flex;
+    padding: 16px 16px 50px 16px;
+    align-items: flex-start;
+    gap: 30px;
+    background-color: #418A6C;
+    border-radius: 16px;
+    color: #EEF8F4;
+}
+
+.wallethead {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.invest p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    text-decoration: underline;
+    line-height: 19.2px;
+    cursor: pointer;
+}
+
+.wallethead h1 {
+    color: #EEF8F4;
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+}
+
+.wallethead p, .invest p, .addbox p {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.investbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 60px;
+}
+
+.invest {
+    display: flex;
+    padding: 0px 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.addbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.investmentbox {
+    display: inline-flex;
+    padding: 0px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: -20px;
+}
+
+.investwalletbox {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.investmentbox .investmentboxtitle {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #1C0B54;
+    font-weight: 600;
+    line-height: 22.4px;
+}
+
+.troyiconbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.troyiconbox p, .tryoyicontext {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25.2px;
+    color: #346E56;
+}
+
+.troyiconbox .tryoyicontext {
+    color: white;
+}
+
+.troybox, .versacebox, .mountbox {
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #CBE9DD;
+    border-radius: 16px;
+    color: #346E56;
+}
+
+.troyicon2 {
+    fill: white;
+}
+
+.versacebox {
+    background-color: #1C0B54;
+    color: white;
+    padding: 5px 10px;
+}
+
+.mountbox {
+    background-color: white;
+}
+
+.investlist {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    align-self: stretch;
+    margin-top: -10px;
+}
+
+.amount, .amount2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    /* line-height: 22.4px; */
+    margin-top: -10px;
+}
+
+.return, .return2 {
+    color: #1C0B54;
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: -5px;
+}
+
+.return2{
+    color: white;
+}
+
+.percentage, .percentage2 {
+    margin-top: -3px;
+    color: #088652;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+
+.percentage2 {
+    margin-top: 0;
+}

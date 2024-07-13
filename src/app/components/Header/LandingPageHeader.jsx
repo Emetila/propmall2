@@ -29,7 +29,7 @@ export const LandingPageHeader = () => {
             <HeaderNavigation className={showMenu ? 'mobile' : ''}/>
         </div>
         <div className="button">
-            <CustomButton  className="login" onClick={()=>{}} type="secondary"><a href="/">Login</a></CustomButton>
+            <CustomButton  className="login" onClick={()=>{}} type="secondary"><a href="/login">Login</a></CustomButton>
             <CustomButton className="buttonsignup" onClick={()=>{}}>Sign Up</CustomButton>
         </div>
     </header>)
