@@ -1,0 +1,51 @@
+.proprty-hero .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proprty-hero {
+    padding: var(--app-block-padding);
+}
+
+.title p {
+    color: #418A6C;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+  }
+
+  .searchbar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #1E4032;
+    border-radius: 16px;
+    padding: 5px;
+    margin-right: 10px;
+    color: #418A6C;
+    font-family: "Open Sans", sans-serif;
+    
+  }
+  .icon {
+    margin-right: 5px;
+    color: #418A6C;
+    width: 24px;
+    height: 24px;
+  }
+
+  .input {
+    border: none;
+    width: 400px;
+    font-size: 16px;
+  }
+
+.proprty-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}

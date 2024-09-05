@@ -1,0 +1,198 @@
+.signin {
+    padding: var(--app-block-padding);
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
+    padding-top: 0;
+    align-items: center;
+    height: 800px;
+}
+
+.leftsigin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+}
+
+.image {
+    width: 600px;
+    position: relative;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+}
+
+.sigincontainer {
+    width: 300px;
+    padding: 20px;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #469373;
+    background-color: transparent;
+    height: 25px;
+    border-radius: 6px;
+}
+
+input:active {
+    border: none;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.input-field {
+    position: relative;
+}
+
+.password-eye-icon {
+    position: absolute;
+    top: 58%;
+    left: 38vw;
+    cursor: pointer;
+}
+
+.form-group {
+    padding: 10px;
+}
+
+.forgot, .signedin {
+    display: flex;
+    color: #469373;
+    align-items: center;
+    gap: 10px;
+}
+
+.forgottext, .keepme {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+}
+
+.forgottext a {
+    text-decoration: none;
+    color: #469373;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+.keyicon, .circleicon {
+    width: 24px;
+    height: 24px;
+}
+
+.signedin {
+    padding-bottom: 30px;
+}
+
+.buttonsignup, .googlesignin {
+    width: 320px;
+}
+
+.googlesignin, .new {
+    gap: 20px;
+    border: none;
+    color: #1C0B54;
+    font-weight: 400;
+}
+
+.google, .apple {
+    width: 28px;
+    height: 26px;
+    box-shadow: rgb(189, 187, 187) 0px 5px 15px;
+    border-radius: 60px;
+}
+
+.new span a {
+    color: #469373;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.new span a:hover {
+    text-decoration: underline;
+}
+
+.righttext {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 480px;
+    top: 59%;
+    left: 75vw;
+    transform: translate(-50%, -50%);
+}
+
+.righttext h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: center;
+    color: #1C0B54;
+}
+
+.righttext p {
+    color: #1C0B54;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+}
+
+.righttext a {
+    color: #1C0B54;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    padding-top: 10px;
+}
+
+.buttonsignup a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width:500px) {
+    .right, .image, .righttext  {
+        display: none;
+    }
+
+    .password-eye-icon {
+        position: absolute;
+        top: 57%;
+        left: 80%;
+        cursor: pointer;
+    }
+}

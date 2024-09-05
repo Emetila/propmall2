@@ -1,0 +1,103 @@
+.container {
+    padding: 0 var(--app-block-padding);
+}
+
+.headbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.headbox h1, .headbox2 h1 {
+    color: #418A6C;
+    font-family: "Montserrat", sans-serif;
+}
+
+.headbox2 h1 {
+    text-align: left;
+}
+
+.headbox h2 {
+    color: #418A6C;
+    font-family: "Open Sans", sans-serif; 
+    font-weight: 500;
+}
+
+.products {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+}
+
+.productbox {
+    display: flex;
+    padding: 0 10px 20px 10px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 32px;
+    background: white;
+    box-shadow: 0px 4px 16px 8px rgba(179, 179, 179, 0.25);
+    width: 320px;
+}
+
+.productsimages {
+    margin-top: -30px;
+    width: 320px;
+    height: 320px;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 320px;
+    margin-top: -50px;
+}
+
+.amount {
+    color: #418A6C;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.title {
+    color: #1C0B54;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 22.4px;
+}
+
+.locationbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #418A6C;
+}
+
+.slotbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.locationdistancebox {
+    display: flex;
+    width: 320px;
+    align-items: center;
+    gap: 10px;
+}
+
+.locationicon, .sloticon {
+    width: 18px;
+    height: 18px;
+}
+
+.locationtext, .slottext {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 22.4px;
+}

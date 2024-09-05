@@ -1,0 +1,16 @@
+.container {
+    padding: var(--app-block-padding);
+    background-color: #CBE9DD;
+}
+
+.imagebox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.imagebox h1 {
+    color: #418A6C;
+    font-family: "Montserrat", sans-serif;
+}

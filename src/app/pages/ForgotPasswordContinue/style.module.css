@@ -1,0 +1,132 @@
+.forgot-password {
+    padding: var(--app-block-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.image {
+    width: 410px;
+    height: 410px;
+}
+
+.forgot-password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: left;
+    color: #418A6C;
+    text-align: center;
+}
+
+.title p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: center;
+    color: #1C0B54;
+}
+
+.form-group {
+    padding: 10px;
+    margin: 30px 40px 20px 15px;
+    text-align: left;
+}
+
+.check {
+    color: #1C0B54;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    gap: 32px;
+}
+
+.container h2 {
+    background-color: #EEF8F4;
+    padding: 20px 20px 20px 20px;
+    border-radius: 16px;
+    gap: 10px;
+    opacity: 0px;
+    text-align: center;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.message {
+    color: green;
+    margin-bottom: 15px;
+}
+
+.button {
+    width: 280px;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+.formbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width:500px) {
+    .forgot-password {
+        padding: var(--app-block-padding);
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+        line-height: 33.6px;
+        text-align: center;
+    }
+
+    .title p {
+        font-size: 14px;
+        line-height: 22.4px;
+    }
+
+    .button {
+        width: 300px;
+    }   
+    
+    .container {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .container h2 {
+        padding: 16px;
+        gap: 10px;
+        font-weight: 300;
+        font-size: 16px;
+    }
+    
+}

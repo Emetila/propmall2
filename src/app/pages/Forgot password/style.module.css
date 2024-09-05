@@ -1,0 +1,101 @@
+.forgot-password {
+    padding: var(--app-block-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.image {
+    width: 410px;
+    height: 410px;
+}
+
+.forgot-password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: left;
+    color: #418A6C;
+    text-align: center;
+}
+
+.title p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: center;
+    color: #1C0B54;
+}
+
+.form-group {
+    padding: 10px;
+    margin: 30px 40px 20px 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "Open Sans", sans-serif;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 0px, 0px, 1px, 0px solid #418A6C;
+    background-color: transparent;
+    height: 25px;
+    border-radius: 6px;
+}
+  
+.message {
+    color: green;
+    margin-bottom: 15px;
+}
+
+.button {
+    width: 400px;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width:500px) {
+    .forgot-password {
+        padding: var(--app-block-padding);
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+        line-height: 33.6px;
+        text-align: center;
+    }
+
+    .title p {
+        font-size: 14px;
+        line-height: 22.4px;
+    }
+
+    .button {
+        width: 300px;
+    }    
+}
