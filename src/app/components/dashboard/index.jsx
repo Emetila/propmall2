@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import style from './style.module.css';
 import { SlSettings } from "react-icons/sl";
 import { IoIosNotificationsOutline } from "react-icons/io";
@@ -7,19 +7,53 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { VscEye } from "react-icons/vsc";
 import { IoIosAddCircleOutline } from "react-icons/io";
 import { ReactComponent as TroyIcon } from '../../assets/icon/troy.svg';
+import { CiImageOn } from "react-icons/ci";
+import { GoLog } from "react-icons/go";
+import { PiChartBarLight } from "react-icons/pi";
+import { CiSettings } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 export const DashboardBody = () => {
+    const [dropdownVisible, setDropdownVisible] = useState(false);
+
+    const handleMenuClick = (menu) => {
+        setDropdownVisible(false);
+    };
+
+    const handleDropdownClick = () => {
+        setDropdownVisible(!dropdownVisible);
+    };
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setDropdownOpen(!dropdownOpen);
+    };
     return (
         <div className={style.container}>
             <header className={style.header}>
                 <h1>Dashboard</h1>
-                <nav>
+                <nav className={style.navigation}>
                     <SlSettings className={style.setting} />
                     <IoIosNotificationsOutline className={style.notificationicon} />
-                    <div>
+                    <div className={style.usericonbox}>
                         <UserIcon className={style.usericon} />
                         <p>Tiffany’s profile</p>
-                        <RiArrowDropDownLine className={style.dropdown} />
+                        <RiArrowDropDownLine className={style.dropdown} onClick={toggleDropdown} />
+                        <div className={`dropdown-content ${dropdownOpen ? 'show' : ''}`}>
+                            <Link to="/myportfolio" >
+                                <CiImageOn />
+                                <p>My portfolio</p></Link>
+                            <Link to="/myportfolio" >
+                                <GoLog />
+                                <p>Transaction History</p></Link>
+                            <Link to="/myportfolio" >
+                                <PiChartBarLight />
+                                <p>Investments</p></Link>
+                            <Link to="/myportfolio" >
+                                <CiSettings />
+                                <p>Settings</p></Link>
+                            <Link to="/login">Log out</Link>
+                        </div>
                     </div>
                 </nav>
             </header>
