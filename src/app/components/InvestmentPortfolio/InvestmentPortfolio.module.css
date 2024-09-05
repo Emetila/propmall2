@@ -1,0 +1,116 @@
+/* src/components/InvestmentPortfolio.module.css */
+.portfolioSection {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .portfolioContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .portfolioLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .houseImage {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .propertyDetails {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .initialValuation {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .appreciationRate {
+    background-color: #e8f4e5;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #2f8f2d;
+    margin-bottom: 10px;
+  }
+  
+  .currentValuation,
+  .monthlyReturns {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .portfolioRight {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .financialGoals {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .portfolioOptions {
+    text-align: center;
+  }
+  
+  .portfolioTitle {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .portfolioCards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+  }
+  
+  .card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    background-color: #45a049;
+  }
+  
